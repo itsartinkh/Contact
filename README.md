@@ -17,6 +17,8 @@ Perfect for beginners who want to practice Python, file handling, and CLI applic
 
 ❌ Delete a contact
 
+✏️ Update contact's phone number
+
 💾 All contacts are saved locally in a JSON file (so your data persists)
 
 
