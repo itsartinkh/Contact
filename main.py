@@ -105,9 +105,10 @@ def main():
         print("2. Add new contact")
         print("3. Search contact")
         print("4. Delete contact")
-        print("5. Exit")
+        print("5. Update contact")
+        print("6. Exit")
 
-        choice = input("Choose an option (1-5): ")
+        choice = input("Choose an option (1-6): ")
 
         if choice == "1":
             display_contacts(contacts)
