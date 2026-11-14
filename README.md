@@ -1,7 +1,7 @@
 
 📒 Contact Book CLI App
 
-A simple Python Command-Line Contact Book where you can add, search, update, and delete contacts right from your terminal.
+A simple Python Command-Line Contact Book where you can add, search, update, and delete contacts (including address) right from your terminal.
 Perfect for beginners who want to practice Python, file handling, and CLI applications.
 
 
