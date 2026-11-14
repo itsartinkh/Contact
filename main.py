@@ -67,7 +67,7 @@ def search_contact(contacts):
             print(f"- {c['name']} | {c['phone']} | {c['email']}")
         print()
     else:
-        print("❌ No contacts found.\n")
+        print("❌ No contacts found matching your search.\n")
 
 
 def delete_contact(contacts):
