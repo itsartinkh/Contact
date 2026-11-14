@@ -119,11 +119,10 @@ def main():
         elif choice == "4":
             delete_contact(contacts)
         elif choice == "5":
+            update_contact(contacts)
+        elif choice == "6":
             print("👋 Goodbye!")
             break
-        else:
-            print("❌ Invalid choice. Try again.\n")
-
 
 if __name__ == "__main__":
     main()
