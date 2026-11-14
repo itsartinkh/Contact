@@ -77,6 +77,7 @@ def delete_contact(contacts):
             contacts.remove(c)
             save_contacts(contacts)
             print(f"🗑️ Contact {name} deleted successfully!\n")
+            print()  # <--- خط جدید
             return
     print("❌ Contact not found.\n")
 
