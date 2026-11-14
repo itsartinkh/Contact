@@ -92,7 +92,7 @@ def main():
         print("===== CONTACT BOOK =====")
         print("1. View all contacts")
         print("2. Add new contact")
-        print("3. Search contact")
+        print("3. Search contact by name/phone")
         print("4. Delete contact")
         print("5. Exit")
 
