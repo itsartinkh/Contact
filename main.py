@@ -38,7 +38,7 @@ def display_contacts(contacts):
     if not contacts:
         print("\n📂 No contacts found.\n")
         return
-    print("\n📂 Contact List:")
+    print("\n📂Artin's Contact List:")
     for idx, contact in enumerate(contacts, start=1):
         print(f"{idx}. {contact['name']} - {contact['phone']} - {contact['email']}")
     print()
