@@ -84,3 +84,5 @@ Telegram: Thereal6lackRaven
 
 ⚡ Learn Python by building real projects!
 
+Version 1.0 - Developed by Artin
+This is Artin Khalilzadeh.
