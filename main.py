@@ -40,8 +40,7 @@ def display_contacts(contacts):
         return
     print("\n📂Artin's Contact List:")
     for idx, contact in enumerate(contacts, start=1):
-        print(f"{idx}. {contact['name']} - {contact['phone']} - {contact['email']}")
-    print()
+        print(f"{idx}. {contact['name']} - {contact['phone']} - {contact['email']} - {contact.get('address', 'N/A')}")
 
 
 def add_contact(contacts):
