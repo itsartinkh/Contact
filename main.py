@@ -49,11 +49,11 @@ def add_contact(contacts):
     name = input("Enter name: ")
     phone = input("Enter phone: ")
     email = input("Enter email: ")
+    address = input("Enter address: ")
 
-    contacts.append({"name": name, "phone": phone, "email": email})
+    contacts.append({"name": name, "phone": phone, "email": email, "address": address})
     save_contacts(contacts)
     print(f"✅ Contact {name} added successfully!\n")
-
 
 def search_contact(contacts):
     """Search contacts by name."""
