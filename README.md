@@ -13,7 +13,7 @@ Perfect for beginners who want to practice Python, file handling, and CLI applic
 
 🔍 Search for a contact by name
 
-✏️ View all saved contact
+✏️ View all saved contacts
 
 ❌ Delete a contact
 
