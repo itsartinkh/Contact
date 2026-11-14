@@ -56,9 +56,10 @@ def add_contact(contacts):
 
 
 def search_contact(contacts):
-    """Search contacts by name."""
-    keyword = input("Enter name to search: ").lower()
-    results = [c for c in contacts if keyword in c['name'].lower()]
+    """Search contacts by name or phone."""
+    #this function allows the user to search for contacts by name or phone number.
+    keyword = input("Enter name or phone to search: ").lower()
+    results = [c for c in contacts if keyword in c['name'].lower() or keyword in c['phone']]
 
     if results:
         print("\n🔎 Search Results:")
