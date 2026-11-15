@@ -11,7 +11,7 @@ Perfect for beginners who want to practice Python, file handling, and CLI applic
 
 ➕ Add a new contact (name, phone, email, address)
 
-🔍 Search for a contact by name
+🔍 Search for a contact by name or phone
 
 ✏️ View all saved contact
 

@@ -55,9 +55,10 @@ def add_contact(contacts):
     print(f"✅ Contact {name} added successfully!\n")
 
 def search_contact(contacts):
-    """Search contacts by name."""
-    keyword = input("Enter name to search: ").lower()
-    results = [c for c in contacts if keyword in c['name'].lower()]
+    """Search contacts by name or phone."""
+    #this function allows the user to search for contacts by name or phone number.
+    keyword = input("Enter name or phone to search: ").lower()
+    results = [c for c in contacts if keyword in c['name'].lower() or keyword in c['phone']]
 
     if results:
         print("\n🔎 Search Results:")
@@ -65,7 +66,7 @@ def search_contact(contacts):
             print(f"- {c['name']} | {c['phone']} | {c['email']}")
         print()
     else:
-        print("❌ No contacts found.\n")
+        print("❌ No contacts found matching your search.\n")
 
 
 def delete_contact(contacts):
@@ -90,7 +91,7 @@ def main():
         print("===== CONTACT BOOK =====")
         print("1. View all contacts")
         print("2. Add new contact")
-        print("3. Search contact")
+        print("3. Search contact by name/phone")
         print("4. Delete contact")
         print("5. Exit")
 
