@@ -38,7 +38,7 @@ def display_contacts(contacts):
     if not contacts:
         print("\n📂 No contacts found.\n")
         return
-    print("\n📂Artin's Contact List:")
+    print("\n📂 Contact List:")
     for idx, contact in enumerate(contacts, start=1):
         print(f"{idx}. {contact['name']} - {contact['phone']} - {contact['email']} - {contact.get('address', 'N/A')}")
 
@@ -77,6 +77,7 @@ def delete_contact(contacts):
             contacts.remove(c)
             save_contacts(contacts)
             print(f"🗑️ Contact {name} deleted successfully!\n")
+            print()  # <--- خط جدید
             return
     print("❌ Contact not found.\n")
 
@@ -125,4 +126,5 @@ def main():
             break
 
 if __name__ == "__main__":
+
     main()
