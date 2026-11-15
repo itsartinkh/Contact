@@ -81,6 +81,18 @@ def delete_contact(contacts):
     print("❌ Contact not found.\n")
 
 
+def update_contact(contacts):
+    """Update a contact's phone number by name."""
+    name = input("Enter the name of the contact to update: ")
+    for c in contacts:
+        if c['name'].lower() == name.lower():
+            new_phone = input("Enter new phone number: ")
+            c['phone'] = new_phone
+            save_contacts(contacts)
+            print(f"✅ Contact {name} updated successfully!\n")
+            return
+    print("❌ Contact not found.\n")
+
 # -----------------------------
 # Main menu
 # -----------------------------
@@ -93,9 +105,10 @@ def main():
         print("2. Add new contact")
         print("3. Search contact by name/phone")
         print("4. Delete contact")
-        print("5. Exit")
+        print("5. Update contact")
+        print("6. Exit")
 
-        choice = input("Choose an option (1-5): ")
+        choice = input("Choose an option (1-6): ")
 
         if choice == "1":
             display_contacts(contacts)
@@ -106,11 +119,10 @@ def main():
         elif choice == "4":
             delete_contact(contacts)
         elif choice == "5":
+            update_contact(contacts)
+        elif choice == "6":
             print("👋 Goodbye!")
             break
-        else:
-            print("❌ Invalid choice. Try again.\n")
-
 
 if __name__ == "__main__":
     main()
